@@ -1,7 +1,7 @@
 <?php
 
-  $post_data =  json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
-file_put_contents('a.txt', $post_data);
+//  $post_data =  json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
+//file_put_contents('a.txt', $post_data);
   //这里是一个认证的token，下面我们就会设置到
 //  if($post_data->Secret === 'myhook') {
 
