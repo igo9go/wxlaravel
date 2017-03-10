@@ -1,7 +1,6 @@
 <?php
 
   //coding会以post请求发送一些认证数据，防止别人恶作剧
-  //具体数据查看 https://open.coding.net/webhook.html 
   //这里不能用$_POST接受，无法接收到 RAW_POST_DATA
   $post_data =  json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
 file_put_contents('a.txt', $post_data);
