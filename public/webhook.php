@@ -1,7 +1,5 @@
 <?php
 
-  //coding会以post请求发送一些认证数据，防止别人恶作剧
-  //这里不能用$_POST接受，无法接收到 RAW_POST_DATA
   $post_data =  json_decode($GLOBALS['HTTP_RAW_POST_DATA']);
 file_put_contents('a.txt', $post_data);
   //这里是一个认证的token，下面我们就会设置到
